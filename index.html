@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <div class="header">
+            <a href="#"><img src="assets/images/logo.svg" alt=""></a>
+            <img src="assets/images/menu.svg" alt="" class="header__menu-toggle" id="nav-toggle">
+            <div class="header__menu" id="nav-menu">
+                <div class="header__left">
+                    <img src="assets/images/close.svg" alt="" class="header__menu-close" id="nav-close">
+                    <ul class="header__nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header__right">
+                    <h6 class="header__number">+7 (995) 009 8623</h6>
+                    <div class="header__whatsapp">
+                        <img src="assets/images/whatsapp.svg" alt=""> Whatsapp
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="imageBx">
+                <img src="assets/images/square.svg" alt="" class="imageBx__square">
+                <img src="assets/images/woman.svg" alt="" class="imageBx__woman">
+                <div class="count">
+                    <img src="assets/images/people.svg" alt="" class="count__icon-people">
+                    <h4>+80%</h4>
+                    <p>К количеству <br /> клиентов
+                    </p>
+                </div>
+                <div class="count2">
+                    <img src="assets/images/diagram.svg" alt="" class="count2__diagram">
+                    <div class="count2__text">
+                        <h4>1 000+</h4>
+                        <p>Продаж через интернет <br /> за 2 месяца</p>
+                    </div>
+
+                </div>
+                <div class="graph">
+                    <div class="graph__title">
+                        <img src="assets/images/arrow.svg" alt="" class="graph__icon">
+                        <h5>Рост прибыли <br /> компании</h5>
+                    </div>
+                    <div class="graph__figure">
+                        <div>
+                            <h5>400</h5>
+                            <h5>300</h5>
+                            <h5>200</h5>
+                            <h5>100</h5>
+                        </div>
+                        <div class="graph__bg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__textBx">
+                <div class="content__icon-circle"></div>
+                <div class="content__icon-plus">+</div>
+                <div class="content__icon-plus1">+</div>
+                <div class="content__icon-plus2">+</div>
+                <h2>Разработка сайтов <br /><span>под ключ</span></h2>
+                <p>Разработаем проект для решения <br />задачи любой сложности</p>
+                <input type="text" placeholder="+7 (999) 444 22-33">
+                <a href="#">Реализовать мою идею</a>
+            </div>
+
+        </div>
+        <img src="assets/images/bubble.svg" alt="" class="bubble">
+        <img src="assets/images/bubble2.svg" alt="" class="bubble2">
+    </section>
+    <script>
+        const navMenu = document.getElementById("nav-menu"),
+            toggleMenu = document.getElementById("nav-toggle"),
+            closeMenu = document.getElementById("nav-close")
+
+        toggleMenu.addEventListener('click', () => {
+            navMenu.classList.toggle('show')
+        })
+
+        closeMenu.addEventListener('click', () => {
+            navMenu.classList.remove('show')
+        })
+    </script>
+</body>
+
+</html>
